@@ -7,6 +7,23 @@ Output: [1,2]
 
 '''
 
+'''
+Explanation, 
+
+Create a hashmap to count ocurrence of each element
+then create a frequency bucket sort.
+
+what a bucket sort looks like
+freq = [[] for i in range(len(nums) + 1)]
+for len(nums + 1) = 6, we do (+1) because thats the maximum amount of times an element can occur
+this creates [[],[],[],[],[],[]]
+then we append the element to the index(which we'll correlate the amount of times it occurred)
+
+while counting backwards (because the higher the index, the higher the ocucurence)
+when len(res) == k, return res
+
+'''
+
 def top_k_frequent_elements(nums, k):
 
     count_elements = {}
