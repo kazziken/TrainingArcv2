@@ -23,7 +23,7 @@ def no_repeating_char(self, s):
             res = max(res , r - l)
         #s[r] is already in visited set
         else:
-            #moves s[l] over to s[r] starting the new window and 
+            #moves s[l] over to s[r] starting the new window
             while s[l] != s[r]:
                 visited.remove(s[l])
                 l += 1
