@@ -1,8 +1,3 @@
-33 Search in Rotated Sorted Array
-34 Combination Sum
-35 Permutations
-36 Merge Intervals
-37 Lowest Common Ancestor of a Binary Tree
 38 Time Based Key- Value Store
 39 Accounts Merge
 40 Sort Colors
@@ -21,7 +16,7 @@
 53 Kth Smallest Element in a BST
 54 Minimum Window SubString
 55 Find Median from Data Stream
-56 Word Ladder 
+56 Word Ladder
 57 Basic Calculator
 58 Maximum Profit in Job scheduling
 59 Merge K Sorted Lists

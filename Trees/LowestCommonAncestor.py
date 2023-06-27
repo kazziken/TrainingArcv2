@@ -26,12 +26,30 @@ class TreeNode:
 
 def lowest_common_ancestor(self, root, p, q):
 
-    current_node = root
+    # current_node = root
 
-    while current_node is not None:
-        if p.val > current_node.val and q.val > current_node.val:
-            current_node = current_node.right
-        elif p.val < current_node.val and q.val < current_node.val:
-            current_node = current_node.left
-        else:
-            return current_node 
+    # while current_node is not None:
+    #     if p.val > current_node.val and q.val > current_node.val:
+    #         current_node = current_node.right
+    #     elif p.val < current_node.val and q.val < current_node.val:
+    #         current_node = current_node.left
+    #     else:
+    #         return current_node
+
+
+    if root == None or root == p or root == q:
+            return root
+        
+    l = self.lowestCommonAncestor(root.left, p, q)
+    r = self.lowestCommonAncestor(root.right, p, q)
+
+    #if nothing was found on left side, check right
+    if not l:
+        return r
+    
+    #vise versa
+    if not r:
+        return l
+    
+    else:
+        return root
