@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 31 Num of Islands
 32 Rotting Oranges
 33 Search in Rotated Sorted Array
@@ -5,6 +6,8 @@
 35 Permutations
 36 Merge Intervals
 37 Lowest Common Ancestor of a Binary Tree
+=======
+>>>>>>> c4e890f1671b4efbb9fb4216125f8b11eccccd36
 38 Time Based Key- Value Store
 39 Accounts Merge
 40 Sort Colors
@@ -23,7 +26,7 @@
 53 Kth Smallest Element in a BST
 54 Minimum Window SubString
 55 Find Median from Data Stream
-56 Word Ladder 
+56 Word Ladder
 57 Basic Calculator
 58 Maximum Profit in Job scheduling
 59 Merge K Sorted Lists
