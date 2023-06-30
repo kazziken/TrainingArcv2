@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-31 Num of Islands
-32 Rotting Oranges
-33 Search in Rotated Sorted Array
-34 Combination Sum
-35 Permutations
-36 Merge Intervals
-37 Lowest Common Ancestor of a Binary Tree
-=======
->>>>>>> c4e890f1671b4efbb9fb4216125f8b11eccccd36
-38 Time Based Key- Value Store
 39 Accounts Merge
-40 Sort Colors
 41 String to Integer (atoi)
 42 Spiral Matrix
 43 Subsets
@@ -31,3 +19,6 @@
 58 Maximum Profit in Job scheduling
 59 Merge K Sorted Lists
 60 Largest Rectangle in Histogram
+
+
+47 questions here so far
