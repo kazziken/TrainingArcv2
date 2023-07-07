@@ -19,3 +19,6 @@
 58 Maximum Profit in Job scheduling
 59 Merge K Sorted Lists
 60 Largest Rectangle in Histogram
+
+
+47 questions here so far
