@@ -1,6 +1,4 @@
-38 Time Based Key- Value Store
 39 Accounts Merge
-40 Sort Colors
 41 String to Integer (atoi)
 42 Spiral Matrix
 43 Subsets

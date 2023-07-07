@@ -32,3 +32,23 @@ def valid_parenthesis(s):
             return False
         stack.pop()
     return stack == []
+
+#lets pretend you can add characters into the 
+
+def isBalanced(s):
+    pairs = {'(', ')', '{', '}', '[', ']'}
+    parens = pairs.keys() | pairs.values()
+
+    stack = []
+    for c in s:
+        if c not in parens:
+            continue
+        if c in pairs:
+            stack.append(c)
+            continue
+        #if stack still full
+        if not stack:
+            return False
+        if c != stack.pop():
+            return False
+    return len(stack) == 0

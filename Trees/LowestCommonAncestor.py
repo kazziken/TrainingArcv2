@@ -37,7 +37,10 @@ def lowest_common_ancestor(self, root, p, q):
     #         return current_node
 
 
-    if root == None or root == p or root == q:
+    if root == None:
+        return None
+    
+    if root == p or root == q:
             return root
         
     l = self.lowestCommonAncestor(root.left, p, q)
@@ -51,5 +54,6 @@ def lowest_common_ancestor(self, root, p, q):
     if not r:
         return l
     
+    #If found in both branches just return root
     else:
         return root
