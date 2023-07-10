@@ -1,5 +1,4 @@
 39 Accounts Merge
-41 String to Integer (atoi)
 42 Spiral Matrix
 43 Subsets
 44 Binary Tree Right Side View
@@ -21,4 +20,3 @@
 60 Largest Rectangle in Histogram
 
 
-47 questions here so far

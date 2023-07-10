@@ -22,8 +22,10 @@ def mergeIntervals(self,intervals):
     for start,end in intervals[1:]:
         last_end = output[-1][1]
         
-        #checking next iteration if their start is less than the last_end of the previous iteration
-        #if it is then replace that value with the max of previous end and current end
+        '''
+        checking next iteration if their start is less than the last_end of the previous iteration
+        if it is , its overlapping, so we're going to replace the last_end value as the max of both ends
+        '''
         if start <= last_end:
             output[-1][1] = max(last_end, end)
         else:
