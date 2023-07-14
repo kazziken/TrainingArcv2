@@ -23,28 +23,23 @@ class Solution:
     """
     def min_meeting_rooms(self, intervals):
         
-        if not intervals:
-            return 0
-        
-        used_rooms = 0
+        start = sorted([i[0] for i in intervals])
+        end = sorted(i[1] for i in intervals)
 
-        #Seprate the time and end timings, sorting them individually
-        start_times = sorted([i.start for i in intervals])
-        end_times = sorted(i.end for i in intervals)
-
-        #2pointers
-        start_p, end_p = 0, 0
-
-        #until all the meetings have been iterated
-        while start_p < len(intervals):
-            # if there is a meeting that as ended by the time the meeting at 'start_p' starts
-            if start_times[start_p] >= end_times[end_p]:
-                # then free up a room and increment end pointer
+        s = e = 0
+        used_rooms, res = 0, 0
+        while s < len(intervals):
+            if start[s] < end[e]:
+                # A new meeting is starting
+                used_rooms += 1
+                s += 1
+            else:
+                # A current meeting is ending
                 used_rooms -= 1
-                end_p += 1
-            used_rooms += 1
-            start_p += 1
-        return used_rooms
+                e += 1
+            res = max(res, used_rooms)
+
+        return res 
 
 #HEAPQ SOLUTION
 import heapq
