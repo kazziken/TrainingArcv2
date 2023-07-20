@@ -26,6 +26,7 @@ def longest_consecutive_sequence(nums):
         #if the n is the start of a sequence (n-1) set length to be 0 then add 1 every time theres a (n + length)
         if (n-1) not in num_set:
             length = 0
+            #loop to find consecutive nums in the set
             while (n + length) in num_set:
                 length +=1 
             counter = max(counter, length)
