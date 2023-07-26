@@ -1,5 +1,5 @@
 '''
-
+You got this question in an interview. Don't need the description
 '''
 
 def spiral_matrix(matrix):
