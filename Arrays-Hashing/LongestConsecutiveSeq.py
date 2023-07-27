@@ -12,7 +12,7 @@ Explanation:
 Create a hashset for nums first, and a counter so its easy to return the max seq
 
 then iterate through nums. If (n-1) means thats the start of a sequence, length = 0
-if there is an n + length in the set, length += 1
+while there is an n + length in the set, length += 1
 then return counter = max(counter,length)
 
 '''
