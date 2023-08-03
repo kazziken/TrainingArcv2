@@ -44,6 +44,7 @@ def permutation(nums):
             res.append(path)
             # return # backtracking
         for i in range(len(nums)):
+            #nums[:i]
             dfs(nums[:i]+nums[i+1:], path+[nums[i]], res)
     
     dfs(nums, [], res)
