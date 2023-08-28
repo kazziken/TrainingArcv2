@@ -42,9 +42,3 @@ def rotatedArray(self, nums, target):
                 l = mid + 1
     return -1
             
-
-                
-
-
-
-
